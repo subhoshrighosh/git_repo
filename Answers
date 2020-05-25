@@ -1,0 +1,54 @@
+Answers to all the questions are mentioned below :-
+
+
+A. What is meant by the term fork and clone?
+
+Ans ---》 FORK :- A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+CLONE :- Clone is same as what the word has in the literary terms, making a copy of the files present in the cloud on github server to your local machine.
+Cloning basically means you want to get a local copy of the code present in the repository. After cloning you can then do whatever changes you like in the code and then you can pull the changes back to the repository.
+
+** fork is in essence a clone too but it doesn't keep up with the original repo. So you will not be able to track the changes made to the original repo when you do a 'git fetch', 'git status' and finally 'git merge' (or 'git pull') .
+
+B. What are branches in github ?
+
+ Ans - Git branch is a feature in git used for separating a feature or part of code from you your master in order not to mess something in your main code like suppose you have a website as a project in git and you want to add a new feature to it so you do it by creating a new branch for it so your main code remain the same as it and once you complete it then you merge it with your master.
+
+C. What is PR ?
+
+Ans - PR stands for pull request. A pull/merge request is submitted when you’ve worked on some code from a particular branch and want to inform the others of the changes you’ve made. A person/people can be assigned to review and subsequently approve the request before your changes can be incorporated into the branch. Do note that it is referred to as a “pull-request” on GitHub and Bitbucket, but other platforms like GitLab and Gitorious have opted to call it a “merge-request”.
+
+D. Can we delete the master branch if not why?
+
+Ans - yes we can , but only after creating a new branch and set that branch as the default one.
+
+
+E. How can we delete a branch ? 
+
+Ans - *DELETING A BRANCH*
+
+## Delete a remote branch
+
+a. git push origin --delete <branch> 
+ ( Git version 1.7.0 or newer )
+
+b. git push origin :<branch> 
+
+(Git versions older than 1.7.0)
+
+
+## Delete a local branch
+
+a. git branch --delete <branch>
+
+b. git branch -d <branch>
+ 
+( Shorter version)
+
+C. git branch -D <branch>
+
+ (Force delete un-merged branches)
+
+{☆Also in github, we can have head branches automatically deleted after pull requests are merged in your repositor.}
